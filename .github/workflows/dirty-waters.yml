@@ -53,7 +53,7 @@ jobs:
         id: static-analysis
         continue-on-error: true
         if: steps.check-first-run.outputs.is_first_run == 'true'
-        uses: chains-project/dirty-waters-action@0e793582c3e8be0fea520d2713990bc27bd2c9f6
+        uses: chains-project/dirty-waters-action@17aa4040427c641a737174995e11e8066cb755f9
         with:
           # example args, change as needed
           # dirty_waters_version: 3b83ec05b4072e43e65a2ad95b33d9523e0dbda3
@@ -68,7 +68,7 @@ jobs:
         id: differential-analysis
         continue-on-error: true
         if: ${{ !(steps.check-first-run.outputs.is_first_run == 'true') }}
-        uses: chains-project/dirty-waters-action@0e793582c3e8be0fea520d2713990bc27bd2c9f6
+        uses: chains-project/dirty-waters-action@17aa4040427c641a737174995e11e8066cb755f9
         with:
           # example args, change as needed
           # dirty_waters_version: 3b83ec05b4072e43e65a2ad95b33d9523e0dbda3
