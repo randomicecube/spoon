@@ -33,4 +33,5 @@ jobs:
           gradual_report: false
           debug: true
           comment_on_commit: true
+          ignore_cache: ${{ github.event.inputs.ignore_cache }}
 
